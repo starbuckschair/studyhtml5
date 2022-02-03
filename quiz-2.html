@@ -1,26 +1,61 @@
-﻿<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-    <head>
+  <head>
     <meta charset="utf-8">
-    <title>연습문제2번</title>
-    </head>
-    <body>
-        <h1>이지스퍼블리싱 신입 사원 모집 공고</h1>
-
-        <p>IT 기획, 편집 부서에서 함께 할 신입 사원을 모집합니다.</p>
-        
-        <ul>
-            <li>모집 직군 : 편집 기획 부서</li>
-            <li>직무 내용 : 도서 프로듀싱 업무 (신입 지원 가능)
-                <ul>
-                    <li>도서 기획, 편집</li>
-                    <li>도서 홍보, 독자 소통</li>
-                </ul>
-            </li>
-            <li>접수 마감일 : 2016.3.6.</li>  
-        </ul>
-        <p>자세한 내용은 공지 게시판을 참고하세요</p>
-    </body>
+    <title>프런트엔드 개발자 지원서</title>
+    <style>
+			#container { 
+				width:520px;
+				border:1px solid black;
+				padding:20px 40px;
+				margin:0 auto;
+			}
+      fieldset { margin-bottom:15px; }
+      legend { font-weight:bold; }
+			ul {list-style-type: none;}
+			li { line-height:30px;}
+    </style>
+  </head>
+  <body>
+		<div id="container">
+			<h1>프런트엔드 개발자 지원서 </h1>
+			<p>HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>
+			<hr>
+			<form>
+				<h3>개인정보</h3>
+			<ul>
+				<li>
+					<label for="name">이름</label>
+					<input type="text" id="name" autofocus placeholder="공백없이 입력하세요">
+				</li>
+				<li>
+					<label for="snumber">연락처</label>
+					<input type="text" id="snumber">	
+				</li>
+			</ul>	
+				<h3>지원분야</h3>
+			<ul>
+				<li>
+					<label><input type="radio" name="field" value="an">웹 퍼블리싱
+					</label>
+				</li>
+				<li>
+					<label><input type="radio" name="field" value="pd">웹 애플리케이션 개발
+					</label>
+				</li>
+				<li>
+					<label><input type="radio" name="field" value="eng">개발 환경 개선</label>
+				</li>
+			</ul>
+			<h3>지원 동기</h3>
+			<label>
+			<textarea cols="60" rows="5" placeholder="본사 지원 동기를 간략히 써 주세요"></textarea>
+		</label>
+			<div>
+			<input type="submit" value="접수하기">
+			<input type="reset" value="다시 쓰기">
+			</div> 
+			</form>
+		
+  </body>
 </html>
-
-
